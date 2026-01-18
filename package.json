@@ -1,0 +1,31 @@
+{
+  "name": "my-fullstack-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/cvalderrama1991/my-fullstack-app#readme",
+  "bugs": {
+    "url": "https://github.com/cvalderrama1991/my-fullstack-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvalderrama1991/my-fullstack-app.git"
+  },
+  "license": "MIT",
+  "author": "Carlos",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node --watch --env-file=.env dist/backend/server.js",
+    "dev:server": "tsx watch src/backend/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "typescript": "^5.9.3"
+  }
+}
