@@ -19,7 +19,8 @@
   "main": "server.ts",
   "scripts": {
     "dev": "tsc --watch",
-    "start": "node --watch --env-file=.env dist/backend/server.js",
+    "backend": "node --watch --env-file=.env dist/backend/server.js",
+    "frontend": "node --watch dist/frontend/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
